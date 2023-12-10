@@ -28,3 +28,12 @@ $(document).ready(function () {
     });
 
 });
+
+document.getElementById("myForm").addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    let email = "alhafidzw1@gmail.com";
+    let mailtoLink = "mailto:" + email;
+
+    window.location.href = mailtoLink;
+});
